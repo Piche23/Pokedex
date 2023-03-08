@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import fr.imt.pokedex.PokedexListActivity.Companion.getAssetsDrawable
 import fr.imt.pokedex.R
 import fr.imt.pokedex.model.Pokemon
-class PokemonListAdapter(private val context: Context, private val dataset:
-List<Pokemon>): RecyclerView.Adapter<PokemonListAdapter.ItemViewHolder>() {
+class PokemonListAdapter(private val context: Context, private val dataset:List<Pokemon>): RecyclerView.Adapter<PokemonListAdapter.ItemViewHolder>() {
     class ItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.pokedex_list_item_name)
         val imageView: ImageView = view.findViewById(R.id.pokedex_list_item_image)
